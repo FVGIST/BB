@@ -1,0 +1,60 @@
+/* quick and dirty css based on https://gist.github.com/gingersoulrecords/c97132df3c9a1467d7b17533e1331679*/
+
+span.fl-builder-button[data-action="discard"][data-action="discard"] {
+	background: #dddddd;
+	color: #CE3F40 !important;
+	margin-top: auto;
+	order: -1;
+	justify-content: center;
+}
+
+[data-action="discard"]:after {
+	content: "\00a0 changes ×";
+}
+
+span.fl-builder-button[data-action="discard"][data-action="discard"]:hover {
+	background: #CE3F40;
+	color: #fafafa !important;
+}
+
+[data-action="publish"][data-action="publish"] {
+	order: -1;
+	background: #059669;
+}
+
+[data-action="publish"]:hover {
+	background: #047857!important;
+}
+
+.fl-builder-publish-actions >.fl-builder-button-group {
+	gap: 4px;
+}
+
+.fl-builder-button-group > .fl-builder-button {
+	border-radius: 3px!important;
+}
+
+.fl-builder-publish-actions.fl-builder-publish-actions {
+	flex-direction: column-reverse;
+	height: 100vh;
+	width: 250px;
+	max-height: 400px;
+	gap: 20px;
+	background-color: #000000;
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	padding: 20px;
+}
+
+span.fl-builder-button-group.fl-builder-button-group {
+	flex-direction: column-reverse;
+	justify-content: flex-end;
+	gap: 20px;
+}
+
+.fl-builder-button.fl-builder-button-primary,.fl-builder-button[data-action="dismiss"] {
+	flex: 0 0 auto !important;
+	height: 50px !important;
+	justify-content: center;
+}
